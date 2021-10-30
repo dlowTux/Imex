@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>IMEX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <style>
+        .bg-green {
+            background: #a8ff78;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #78ffd6, #a8ff78);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .buscar {
+            width: 40%;
+            height: auto;
+            margin-left: 25px;
+        }
+
+        .azul {
+            color: #0d6efd;
+        }
+
+        @media screen and (max-width: 360px) {
+            .buscar {
+                width: 80%;
+                margin: 10px;
+            }
+        }
+
+        .card {
+            height: 360px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-green">
+        <div class="container-fluid">
+            <img src="./img/logo.png" width="60" height="60">
+            <a class="navbar-brand" href="./home.html">IMEX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Área de compras de proveedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Ingresa Proveedores</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="buscar mt-3">
+        <h3>Incio</h3>
+
+        <form>
+            <input class="form-control" placeholder="Ingresa proveedores">
+            <button class="btn btn-success mt-3">Buscar proveedores</button>
+
+        </form>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/proveedores/cemsa.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-center">
+                            <a href="#" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#pro1">
+                                Cemsa</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/proveedores/plastimor.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-center">
+                            <a href="" aria-current="page" href="#" data-bs-toggle="modal"
+                                data-bs-target="#pro2">Plastimor</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/proveedores/cadego.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-center">
+                            <a href="#" aria-current="page" href="#" data-bs-toggle="modal"
+                                data-bs-target="#pro3">CADECO, S.A. de C.V</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/proveedores/oficcemax.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-center">
+                            <a href="#" aria-current="page" href="#" data-bs-toggle="modal"
+                                data-bs-target="#pro4">OFFICE MAX</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/proveedores/naan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-center">
+                            <a href="#" aria-current="page" href="#" data-bs-toggle="modal"
+                                data-bs-target="#pro5">NAANDANJAIN A JAIN IRRIGATION COMPANY</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal para el proveedor 1 -->
+    <div class="modal fade" id="pro1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detalles proveedor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label>
+                        Nombre del proveedor:
+                        <span class="azul">Computación y Electrónica de Morelos, S.A. de C.V.</span>
+                    </label>
+                    <label>
+                        Domicilio:
+                        <span class="azul">SAN MARTIN No. 2 entre BALUARTE y DEFENSA DEL AGUA, Col. CENTRO, CP:
+                            62740, CUAUTLA, MORELOS, MEXICO</span>
+                    </label>
+                    <label>
+                        Nombre del contacto:
+                        <span class="azul">PALOMA RAMIREZ</span>
+                    </label>
+                    <label>
+                        Teléfono:
+                        <span class="azul">735 102 02 70</span>
+                    </label>
+                    <label>
+                        Correo:
+                        <span class="azul">cemsaventas3@hotmail.com</span>
+                    </label>
+                    <label>
+                        Servicios que suministra:
+                        <span class="azul">Computación y Electrónica</span>
+                    </label>
+                    <label>
+                        Descuentos:
+                        <span class="azul">0%</span>
+                    </label>
+                    <br>
+                    <label>
+                        Forma de pago:
+                    </label>
+                    <ul class="azul">
+                        <li>MONEDA MXN</li>
+                        <li>CUALQUIER FORMA DE PAGO</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal para el proveedor 2 -->
+    <div class="modal fade" id="pro2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detalles proveedor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label>
+                        Nombre del proveedor:
+                        <span class="azul">PLASTICOS Y FERTILIZANTES DE MORELOS SA DE CV</span>
+                    </label>
+                    <label>
+                        Domicilio:
+                        <span class="azul">Carr Federal México-Cuautla 151-No.151, Int, Central de Abastos, Tetelcingo,
+                            62757 Cuautla, Mor.</span>
+                    </label>
+                    <label>
+                        Nombre del contacto:
+                        <span class="azul">Mary Melchor.</span>
+                    </label>
+                    <label>
+                        Teléfono:
+                        <span class="azul">735 102 2387</span>
+                    </label>
+                    <label>
+                        Correo:
+                        <span class="azul">Mc2_compras@hotmail.com</span>
+                    </label>
+                    <label>
+                        Servicios que suministra:
+                        <span class="azul">Fertilizantes</span>
+                    </label>
+                    <label>
+                        Descuentos:
+                        <span class="azul">0%</span>
+                    </label>
+                    <br>
+                    <label>
+                        Forma de pago:
+                    </label>
+                    <ul class="azul">
+                        <li>MONEDA USD</li>
+                        <li>PAGO ANTICIPADO, DEPOSITO A CUENTA.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal para el proveedor 3 -->
+    <div class="modal fade" id="pro3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detalles proveedor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label>
+                        Nombre del proveedor:
+                        <span class="azul">CADECO, S.A. de C.V.</span>
+                    </label>
+                    <label>
+                        Domicilio:
+                        <span class="azul">México-Oaxaca 170, Hermenegildo Galeana, 62743 Cuautla, Mor.</span>
+                    </label>
+                    <label>
+                        Nombre del contacto:
+                        <span class="azul">Luz Carmen Corpus Alvarez</span>
+                    </label>
+                    <label>
+                        Teléfono:
+                        <span class="azul">735 302 3154</span>
+                    </label>
+                    <label>
+                        Correo:
+                        <span class="azul">lcorpus@cadeco.com.mx</span>
+                    </label>
+                    <label>
+                        Servicios que suministra:
+                        <span class="azul">Refacciones para Maquinaria Pesada</span>
+                    </label>
+                    <label>
+                        Descuentos:
+                        <span class="azul">0%</span>
+                    </label>
+                    <br>
+                    <label>
+                        Forma de pago:
+                    </label>
+                    <ul class="azul">
+                        <li>MONEDA MXN</li>
+                        <li>DEPOSITO A CUENTA.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal para el proveedor 4 -->
+    <div class="modal fade" id="pro4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detalles proveedor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label>
+                        Nombre del proveedor:
+                        <span class="azul">OFFICE MAX</span>
+                    </label>
+                    <label>
+                        Domicilio:
+                        <span class="azul">Antigua Carretera Mexico-Cuautla 4, Empleado Postal, 62748 Cuautla,
+                            Mor.</span>
+                    </label>
+                    <label>
+                        Nombre del contacto:
+                        <span class="azul">Jose Luis Santa Cruz Rendon</span>
+                    </label>
+                    <label>
+                        Teléfono:
+                        <span class="azul">55 3561 8429</span>
+                    </label>
+                    <label>
+                        Correo:
+                        <span class="azul">jose.santacruz@officemax.com.mx</span>
+                    </label>
+                    <label>
+                        Servicios que suministra:
+                        <span class="azul">Material de oficina, informática y electrónica</span>
+                    </label>
+                    <label>
+                        Descuentos:
+                        <span class="azul">0%</span>
+                    </label>
+                    <br>
+                    <label>
+                        Forma de pago:
+                    </label>
+                    <ul class="azul">
+                        <li>MONEDA MXN</li>
+                        <li>CUALQUIER FORMA DE PAGO</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal para el proveedor 5 -->
+    <div class="modal fade" id="pro5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detalles proveedor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label>
+                        Nombre del proveedor:
+                        <span class="azul">NAANDANJAIN A JAIN IRRIGATION COMPANY</span>
+                    </label>
+                    <label>
+                        Domicilio:
+                        <span class="azul">Circuito Interior 130 A Parque Industrial Millennium San Luis Potosí, S.L.P.
+                            78395 MÉXICO</span>
+                    </label>
+                    <label>
+                        Nombre del contacto:
+                        <span class="azul">Antonio Alvarado</span>
+                    </label>
+                    <label>
+                        Teléfono:
+                        <span class="azul">55 3993 5768</span>
+                    </label>
+                    <label>
+                        Correo:
+                        <span class="azul">alvarado@ndj.com.mx</span>
+                    </label>
+                    <label>
+                        Servicios que suministra:
+                        <span class="azul">Sistema de riego </span>
+                    </label>
+                    <label>
+                        Descuentos:
+                        <span class="azul">0%</span>
+                    </label>
+                    <br>
+                    <label>
+                        Forma de pago:
+                    </label>
+                    <ul class="azul">
+                        <li>MONEDA MXN</li>
+                        <li>CUALQUIER FORMA DE PAGO</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ingresa proveedores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div>
+                            <label>Nombre</label>
+                            <input class="form-control">
+                        </div>
+                        <div>
+                            <label>Domicilio</label>
+                            <input class="form-control">
+                        </div>
+                        <div>
+                            <label>Localidad</label>
+                            <input class="form-control">
+                        </div>
+                        <div>
+                            <label>Teléfono</label>
+                            <input class="form-control">
+                        </div>
+                        <div>
+                            <label>Servicio o producto que suministra</label>
+                            <input class="form-control">
+                        </div>
+                        <div>
+                            <label>Correo</label>
+                            <input class="form-control">
+                        </div>
+                        <div>
+                            <label>Nombre contacto</label>
+                            <input class="form-control">
+                        </div>
+                        <div>
+                            <label>Descuento</label>
+                            <input class="form-control">
+                        </div>
+                        <div>
+                            <label>Forma de pago</label>
+                            <input class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Gurdar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
